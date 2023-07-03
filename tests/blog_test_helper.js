@@ -23,6 +23,7 @@ const initialBlogs = [
 
 const user = {
     username: 'root',
+    name: 'Root User',
     password: 'secret'
 }
 

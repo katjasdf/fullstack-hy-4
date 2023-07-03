@@ -15,7 +15,7 @@ describe('when there is initially some blogs', () => {
         await User.deleteMany({})
 
         const passwordHash = await bcrypt.hash('secret', 10)
-        const user = new User({ username: 'root', passwordHash })
+        const user = new User({ username: 'root', name: 'Root User', passwordHash })
 
         await user.save()
 
